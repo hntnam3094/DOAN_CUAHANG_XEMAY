@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C180A177-2958-4907-B0E9-03EAA4EA87A0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QL_CuaHangXeMay</RootNamespace>
+    <AssemblyName>QL_CuaHangXeMay</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\UI\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="XanderUI">
+      <HintPath>..\..\..\..\..\..\Downloads\thuvien_aps\XanderUI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormKetNoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKetNoi.Designer.cs">
+      <DependentUpon>FormKetNoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_hoadonbanxe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_hoadonbanxe.Designer.cs">
+      <DependentUpon>frm_hoadonbanxe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_hoadonNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_hoadonNCC.Designer.cs">
+      <DependentUpon>frm_hoadonNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Home.Designer.cs">
+      <DependentUpon>frm_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Login.Designer.cs">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_QLBaoHanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QLBaoHanh.Designer.cs">
+      <DependentUpon>frm_QLBaoHanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_QLPhieuNhapXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QLPhieuNhapXe.Designer.cs">
+      <DependentUpon>frm_QLPhieuNhapXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_QLKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QLKhachHang.Designer.cs">
+      <DependentUpon>frm_QLKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_QLNhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QLNhaCungCap.Designer.cs">
+      <DependentUpon>frm_QLNhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_QLNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QLNhanVien.Designer.cs">
+      <DependentUpon>frm_QLNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_QLNhomXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QLNhomXe.Designer.cs">
+      <DependentUpon>frm_QLNhomXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_QLXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QLXe.Designer.cs">
+      <DependentUpon>frm_QLXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_suadangnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_suadangnhap.Designer.cs">
+      <DependentUpon>frm_suadangnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_themDangnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_themDangnhap.Designer.cs">
+      <DependentUpon>frm_themDangnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modul\Connection.cs" />
+    <Compile Include="Modul\DAO_TaiKhoan.cs" />
+    <Compile Include="Modul\DataProvider.cs" />
+    <Compile Include="Modul\Session.cs" />
+    <Compile Include="Modul\Taikhoan.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\HoaDon.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HoaDon.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="FormKetNoi.resx">
+      <DependentUpon>FormKetNoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_hoadonbanxe.resx">
+      <DependentUpon>frm_hoadonbanxe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_hoadonNCC.resx">
+      <DependentUpon>frm_hoadonNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Home.resx">
+      <DependentUpon>frm_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Login.resx">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QLBaoHanh.resx">
+      <DependentUpon>frm_QLBaoHanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QLKhachHang.resx">
+      <DependentUpon>frm_QLKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QLNhaCungCap.resx">
+      <DependentUpon>frm_QLNhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QLNhanVien.resx">
+      <DependentUpon>frm_QLNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QLNhomXe.resx">
+      <DependentUpon>frm_QLNhomXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QLPhieuNhapXe.resx">
+      <DependentUpon>frm_QLPhieuNhapXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QLXe.resx">
+      <DependentUpon>frm_QLXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_suadangnhap.resx">
+      <DependentUpon>frm_suadangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_themDangnhap.resx">
+      <DependentUpon>frm_themDangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report\HoaDon.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HoaDon.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutdown_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_database_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bmw_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutdown_104px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garage_closed_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tags_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchase_order_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group_objects_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\motorcycle_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car_insurance_card_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
